@@ -34,7 +34,7 @@ def is_ready(result):
 
 
 if __name__ == "__main__":
-    LEAK = True
+    LEAK = False
     with concurrent.futures.ThreadPoolExecutor() as executor:
         get_mem_usage()
         for _ in range(10):
