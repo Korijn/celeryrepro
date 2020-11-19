@@ -9,7 +9,7 @@ import random
 import concurrent.futures
 
 
-LEAK = False
+LEAK = True
 app = Celery(broker='amqp://guest:guest@localhost:5672/', backend='rpc://')
 
 
